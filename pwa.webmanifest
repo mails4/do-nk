@@ -44,7 +44,7 @@
             "type": "image/png"
         }
     ],    
-    "start_url": "/mails4/do-nk/index.html",
+    "start_url": "/mails4/do-nk/",
     "display": "fullscreen",
     "theme_color": "#ffffff",
     "background_color": "#ffffff"
