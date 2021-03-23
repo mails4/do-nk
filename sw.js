@@ -6,11 +6,6 @@ const appShellFiles = [
       '/do-nk/index.html',
       '/do-nk/index.js',
 ];
-const gamesImages = [];
-for (let i = 0; i < games.length; i++) {
-  gamesImages.push(`data/img/${games[i].slug}.jpg`);
-}
-const contentToCache = appShellFiles.concat(gamesImages);
 
 // Installing Service Worker
 self.addEventListener('install', (e) => {
