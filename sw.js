@@ -5,7 +5,6 @@ self.addEventListener('install', (e) => {
       '/do-nk/index.html',
       '/do-nk/index.js',
       '/do-nk/style.css',
-      '
     ])),
   );
 });
