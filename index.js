@@ -2,7 +2,7 @@
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('/do-nk/sw.js')
+    .register('/sw.js')
     .then(() => { console.log('Service Worker Registered'); });
 }
 
