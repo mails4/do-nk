@@ -1,10 +1,10 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('fox-store').then((cache) => cache.addAll([
-      '/do-nk/',
-      '/do-nk/index.html',
-      '/do-nk/index.js',
-      '/do-nk/style.css',
+      
+      '/index.html',
+      '/index.js',
+      '/style.css',
     ])),
   );
 });
