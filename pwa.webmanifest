@@ -44,7 +44,7 @@
             "type": "image/png"
         }
     ],    
-    "start_url": "/do-nk/Moon Golf/index.html",
+    "start_url": "/html/index.html",
     "display": "fullscreen",
     "theme_color": "#ffffff",
     "background_color": "#ffffff"
