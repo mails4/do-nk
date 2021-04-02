@@ -7,7 +7,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Пересчет 1.0</title>
+	<title>Re 1.0</title>
 	<style type='text/css'>
 	/* Disable user selection to avoid strange bug in Chrome on Windows:
 	* Selecting a text outside the canvas, then clicking+draging would
@@ -179,7 +179,7 @@
 		// dmengine*.wasm is hardcoded in the built JS loader for WASM,
 		// we need to replace it here with the correct project name.
 		if (path == "dmengine.wasm" || path == "dmengine_release.wasm" || path == "dmengine_headless.wasm") {
-			path = "dmengine.wasm";
+			path = "Re.wasm";
 		}
 		return scriptDirectory + path;
 	};
@@ -238,7 +238,7 @@
 	</script>
 
 	<script id='engine-start' type='text/javascript'>
-		EngineLoader.load("canvas", "dmengine");
+		EngineLoader.load("canvas", "Re");
 	</script>
 </body>
 </html>
