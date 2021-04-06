@@ -7,12 +7,21 @@
 	
 	<meta name="theme-color" content="#ffffff">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+figure {
+ width: 100%; /* Ширина области */
+ height: 400px; /* Высота области */
+ margin: 0; /* Обнуляем отступы */
+}
+figure img { 
+ width: 100%; /* Ширина изображений */
+ height: 100%; /* Высота изображении */
+ object-fit: cover; /* Вписываем фотографию в область */
+}	
 </head>
 <body>
 
 	
-	<p><a class="logo" ><img src="icons/tgbck.jpg" alt="Games"></a></p>
+	<p><a class="figure img" ><img src="icons/tgbck.jpg" alt="Games"></a></p>
 
 </body>
 </html>
