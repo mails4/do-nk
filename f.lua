@@ -1,1 +1,1 @@
-print("Hello loaded as a string")
+print("Hello loaded as a string2")
