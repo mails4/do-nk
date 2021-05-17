@@ -49,9 +49,9 @@ render = /builtins/render/default.renderc
 [graphics]
 default_texture_min_filter = linear
 default_texture_mag_filter = linear
-max_draw_calls = 1024
-max_characters = 8192
-max_debug_vertices = 10000
+max_draw_calls = 512
+max_characters = 4096
+max_debug_vertices = 5000
 texture_profiles = /builtins/graphics/default.texture_profiles
 verify_graphics_calls = 1
 memory_size = 512
@@ -61,16 +61,16 @@ output_spirv = 0
 
 [sound]
 gain = 1
-max_sound_data = 128
-max_sound_buffers = 32
-max_sound_sources = 16
-max_sound_instances = 256
-max_component_count = 32
+max_sound_data = 16
+max_sound_buffers = 3
+max_sound_sources = 3
+max_sound_instances = 5
+max_component_count = 5
 use_thread = 1
 
 [resource]
 http_cache = 0
-max_resources = 1024
+max_resources = 128
 
 [input]
 repeat_delay = 0.5
@@ -80,17 +80,17 @@ game_binding = /input/game.input_bindingc
 use_accelerometer = 0
 
 [sprite]
-max_count = 256
+max_count = 52
 subpixels = 1
 
 [spine]
-max_count = 128
+max_count = 52
 
 [model]
-max_count = 128
+max_count = 16
 
 [mesh]
-max_count = 128
+max_count = 16
 
 [gui]
 max_count = 64
@@ -98,17 +98,17 @@ max_particlefx_count = 64
 max_particle_count = 1024
 
 [collection]
-max_instances = 512
-max_input_stack_entries = 16
+max_instances = 52
+max_input_stack_entries = 8
 
 [collection_proxy]
-max_count = 8
+max_count = 3
 
 [collectionfactory]
-max_count = 128
+max_count = 12
 
 [factory]
-max_count = 128
+max_count = 12
 
 [ios]
 launch_screen = /builtins/manifests/ios/LaunchScreen.storyboardc
@@ -156,7 +156,7 @@ localizations = en
 
 [html5]
 custom_heap_size = 0
-heap_size = 256
+heap_size = 64
 htmlfile = /main/web/engine_template.html
 cssfile = /main/web/dark_theme.css
 archive_location_prefix = archive
@@ -166,8 +166,8 @@ scale_mode = stretch
 splash_image = /assets/Broken-Glass.png
 
 [particle_fx]
-max_count = 64
-max_particle_count = 1024
+max_count = 10
+max_particle_count = 100
 
 [iap]
 auto_finish_transactions = 1
@@ -183,7 +183,7 @@ http_cache_enabled = 1
 shared_state = 1
 
 [label]
-max_count = 64
+max_count = 12
 subpixels = 1
 
 [profiler]
@@ -194,8 +194,8 @@ settings = /liveupdate.settings
 enabled = 1
 
 [tilemap]
-max_count = 16
-max_tile_count = 2048
+max_count = 4
+max_tile_count = 512
 
 [engine]
 run_while_iconified = 0
