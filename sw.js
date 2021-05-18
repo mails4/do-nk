@@ -11,6 +11,8 @@ function hndlEventInstall(evt) {
             '/do-nk/index.html',
             '/do-nk/index.js',
             '/do-nk/sw.js',
+            '/do-nk/Re/',
+            '/do-nk/Moon Golf/',
         ];
         const cacheStat = await caches.open(CACHE_STATIC);
         await Promise.all(
