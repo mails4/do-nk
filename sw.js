@@ -11,7 +11,7 @@ function hndlEventInstall(evt) {
             '/do-nk/index.html',
             '/do-nk/index.js',
             '/do-nk/sw.js',
-            
+            /**
             '/do-nk/Re/index.html',
             '/do-nk/Re/dmloader.js',
             '/do-nk/Re/Re2_wasm.js',
@@ -27,7 +27,7 @@ function hndlEventInstall(evt) {
             '/do-nk/Re/archive/game.dmanifest0',
             '/do-nk/Re/archive/game.projectc0',
             '/do-nk/Re/archive/game.public.der0',
-            
+            */
             '/do-nk/Moon Golf/',
         ];
         const cacheStat = await caches.open(CACHE_STATIC);
