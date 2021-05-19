@@ -11,7 +11,23 @@ function hndlEventInstall(evt) {
             '/do-nk/index.html',
             '/do-nk/index.js',
             '/do-nk/sw.js',
-            '/do-nk/Re/',
+            
+            '/do-nk/Re/index.html',
+            '/do-nk/Re/dmloader.js',
+            '/do-nk/Re/Re2_wasm.js',
+            '/do-nk/Re/Re2_asmjs.js',
+            '/do-nk/Re/Re2.wasm',
+            '/do-nk/Re/Re2.symbols',
+            '/do-nk/Re/Broken-Glass.png',
+            '/do-nk/Re/s-l500.png',
+          
+            '/do-nk/Re/archive/archive_files.json',
+            '/do-nk/Re/archive/game.arcd0',
+            '/do-nk/Re/archive/game.arci0',
+            '/do-nk/Re/archive/game.dmanifest0',
+            '/do-nk/Re/archive/game.projectc0',
+            '/do-nk/Re/archive/game.public.der0',
+            
             '/do-nk/Moon Golf/',
         ];
         const cacheStat = await caches.open(CACHE_STATIC);
