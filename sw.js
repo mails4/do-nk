@@ -1,5 +1,21 @@
 'use strict';
-const CACHE_STATIC = 'static-cache-v3';
+const CACHE_STATIC = 'static-cache-v1';
+
+// Очищает старый кэш
+self.addEventListener('activate', event => {
+   const cacheWhitelist = [CACHE_STATIC];
+   event.waitUntil(
+       caches.keys()
+           .then(keyList =>
+               Promise.all(keyList.map(key => {
+                   if (!cacheWhitelist.includes(key)) {
+                       console.log('Deleting cache: ' + key)
+                       return caches.delete(key);
+                   }
+               }))
+           )
+   );
+});
 
 function hndlEventInstall(evt) {
     /**
