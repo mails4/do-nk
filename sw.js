@@ -30,6 +30,13 @@ function hndlEventInstall(evt) {
             
             '/do-nk/Re/index.html',
             
+           /**'/do-nk/Re/dmloader.js',
+            '/do-nk/Re/Re2_wasm.js',
+            '/do-nk/Re/Re2_asmjs.js',
+            '/do-nk/Re/Re2.wasm',
+            '/do-nk/Re/Re2.symbols',
+            '/do-nk/Re/Broken-Glass.png',
+            '/do-nk/Re/s-l500.png',*/
           
             '/do-nk/Re/archive/archive_files.json',
             '/do-nk/Re/archive/game.arcd0',
