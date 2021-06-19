@@ -23,13 +23,15 @@ function hndlEventInstall(evt) {
      */
     async function cacheStaticFiles() {
         const files = [
-            '/do-nk/',
+            
+           
+            
+           /** 
+           '/do-nk/',
             '/do-nk/index.html',
             '/do-nk/index.js',
             '/do-nk/sw.js',
-           
-            
-           /** '/do-nk/Moon Golf/'*/
+           '/do-nk/Moon Golf/'*/
             
             '/do-nk/Re/index.html',
             '/do-nk/Re/dmloader.js',
