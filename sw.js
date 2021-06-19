@@ -24,7 +24,8 @@ function hndlEventInstall(evt) {
     async function cacheStaticFiles() {
         const files = [
             
-                       
+           
+           
            /** 
            '/do-nk/',
             '/do-nk/index.html',
