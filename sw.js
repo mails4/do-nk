@@ -29,7 +29,7 @@ function hndlEventInstall(evt) {
             '/do-nk/sw.js',
             '/do-nk/index.js',
             '/do-nk/Re/index.html',
-            '/do-nk/Re/index.html'
+            
            /** 
            
            '/do-nk/Moon Golf/'
