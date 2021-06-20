@@ -30,7 +30,9 @@ function hndlEventInstall(evt) {
             '/do-nk/index.html',
             '/do-nk/index.js',
             '/do-nk/sw.js',
-           '/do-nk/Moon Golf/'*/
+           '/do-nk/Moon Golf/'
+           
+           '/do-nk/Re/Re_asmjs.js',*/
             
             '/do-nk/',
             '/do-nk/index.html',
@@ -39,7 +41,6 @@ function hndlEventInstall(evt) {
             '/do-nk/Re/index.html',
             '/do-nk/Re/dmloader.js',
             '/do-nk/Re/Re_wasm.js',
-            '/do-nk/Re/Re_asmjs.js',
             '/do-nk/Re/Re.wasm',
             '/do-nk/Re/Re.symbols',
             '/do-nk/Re/img-shapes.png',
