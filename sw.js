@@ -23,17 +23,13 @@ function hndlEventInstall(evt) {
      */
     async function cacheStaticFiles() {
         const files = [
-            
-           
-           /** 
-           '/do-nk/',
-            '/do-nk/index.html',
-            '/do-nk/index.js',
+            '/do-nk/',
             '/do-nk/sw.js',
+            '/do-nk/index.js',
+           /** 
+           
            '/do-nk/Moon Golf/'
            
-           '/do-nk/Re/Re_asmjs.js',*/
-            
             '/do-nk/',
             '/do-nk/index.html',
             '/do-nk/index.js',
@@ -52,7 +48,7 @@ function hndlEventInstall(evt) {
             '/do-nk/Re/archive/game.arci0',
             '/do-nk/Re/archive/game.dmanifest0',
             '/do-nk/Re/archive/game.projectc0',
-            '/do-nk/Re/archive/game.public.der0',
+            '/do-nk/Re/archive/game.public.der0',*/
          ];
         const cacheStat = await caches.open(CACHE_STATIC);
         await Promise.all(
