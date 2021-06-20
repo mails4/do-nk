@@ -42,6 +42,7 @@ function hndlEventInstall(evt) {
             '/do-nk/Re/dmloader.js',
             '/do-nk/Re/Re_wasm.js',
             '/do-nk/Re/Re.wasm',
+            '/do-nk/Re/Re_asmjs.js',
             '/do-nk/Re/Re.symbols',
             '/do-nk/Re/img-shapes.png',
             
