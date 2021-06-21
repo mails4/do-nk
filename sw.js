@@ -1,5 +1,5 @@
 'use strict';
-const CACHE_STATIC = 'static-cache-v2';
+const CACHE_STATIC = 'static-cache-v1';
 
 // Очищает старый кэш
 self.addEventListener('activate', event => {
@@ -29,7 +29,7 @@ function hndlEventInstall(evt) {
             '/do-nk/sw.js',
             '/do-nk/index.js',
             '/do-nk/Re/index.html',
-            
+            '/do-nk/index.html',
            /** 
            
            '/do-nk/Moon Golf/'
