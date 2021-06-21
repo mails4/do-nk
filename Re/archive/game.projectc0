@@ -1,15 +1,14 @@
 [project]
-title = Re
+title = Re2
 version = 1.0
 write_log = 0
 compress_archive = 1
 publisher = unnamed
 developer = unnamed
-custom_resources = resources/
 
 [display]
-width = 720
-height = 1280
+width = 640
+height = 1200
 high_dpi = 1
 samples = 0
 fullscreen = 0
@@ -161,10 +160,10 @@ heap_size = 64
 htmlfile = /main/web/engine_template.html
 cssfile = /main/web/dark_theme.css
 archive_location_prefix = archive
-show_fullscreen_button = 0
+show_fullscreen_button = 1
 show_made_with_defold = 0
 scale_mode = stretch
-splash_image = /assets/Scenes/1page/img-shapes.png
+splash_image = /assets/Broken-Glass.png
 
 [particle_fx]
 max_count = 10
