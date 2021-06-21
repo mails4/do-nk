@@ -1,5 +1,5 @@
 'use strict';
-const CACHE_STATIC = 'static-cache-v3';
+const CACHE_STATIC = 'static-cache-v3.1';
 
 // Очищает старый кэш (не забудь апнуть версию кэша при апдейте)
 self.addEventListener('activate', event => {
@@ -29,7 +29,6 @@ function hndlEventInstall(evt) {
             '/do-nk/sw.js',
             '/do-nk/index.js',
             '/do-nk/index.html',
-            '/do-nk/Re/index.html',
             '/do-nk/Re/dmloader.js',
             '/do-nk/Re/Re_wasm.js',
             '/do-nk/Re/Re.wasm',
