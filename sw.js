@@ -1,7 +1,7 @@
 'use strict';
 const CACHE_STATIC = 'static-cache-v1';
 
-// Очищает старый кэш
+// Очищает старый кэш (не забудь апнуть версию кэша при апдейте)
 self.addEventListener('activate', event => {
    const cacheWhitelist = [CACHE_STATIC];
    event.waitUntil(
