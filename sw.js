@@ -1,5 +1,5 @@
 'use strict';
-const CACHE_STATIC = 'static-cache-v3.3';
+const CACHE_STATIC = 'static-cache-v3.31';
 
 // Очищает старый кэш (не забудь апнуть версию кэша при апдейте)
 self.addEventListener('activate', event => {
