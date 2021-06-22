@@ -1,5 +1,5 @@
 'use strict';
-const CACHE_STATIC = 'static-cache-v4';
+const CACHE_STATIC = 'static-cache-v5';
 
 // Очищает старый кэш (не забудь апнуть версию кэша при апдейте)
 self.addEventListener('activate', event => {
@@ -30,6 +30,7 @@ function hndlEventInstall(evt) {
             '/do-nk/index.js',
             '/do-nk/index.html',
            
+            '/do-nk/Re/',
             '/do-nk/Re/dmloader.js',
             '/do-nk/Re/Re_wasm.js',
             '/do-nk/Re/Re.wasm',
@@ -39,14 +40,14 @@ function hndlEventInstall(evt) {
            
             '/do-nk/Re/Re_asmjs.js',
             '/do-nk/Re/Re.symbols',
-            '/do-nk/Re/img-shapes.png',*/
+            '/do-nk/Re/img-shapes.png',
             
             '/do-nk/Re/archive/archive_files.json',
             '/do-nk/Re/archive/game.arcd0',
             '/do-nk/Re/archive/game.arci0',
             '/do-nk/Re/archive/game.dmanifest0',
             '/do-nk/Re/archive/game.projectc0',
-            '/do-nk/Re/archive/game.public.der0',
+            '/do-nk/Re/archive/game.public.der0',*/
          ];
         const cacheStat = await caches.open(CACHE_STATIC);
         await Promise.all(
