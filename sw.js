@@ -1,5 +1,5 @@
 'use strict';
-const CACHE_STATIC = 'static-cache-v23';
+const CACHE_STATIC = 'static-cache-v24';
 
 // Очищает старый кэш (не забудь апнуть версию кэша при апдейте)
 self.addEventListener('activate', event => {
@@ -25,7 +25,7 @@ function hndlEventInstall(evt) {
         const files = [
           
            
-           
+            '/do-nk/',
             '/do-nk/sw.js',
             '/do-nk/index.js',
             '/do-nk/Re/dmloader.js',
