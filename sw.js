@@ -1,5 +1,5 @@
 'use strict';
-const CACHE_STATIC = 'static-cache-v26/7.9';
+const CACHE_STATIC = 'static-cache-v26/7.10';
 
 
 
@@ -27,6 +27,7 @@ self.addEventListener('activate', (event) => {
     caches.keys().then((keyList) => {
       return Promise.all(keyList.map((key) => {
         if (cacheKeeplist.indexOf(key) === -1) {
+           console.log('Deleting cache: ' + key)
           return caches.delete(key);
         }
       }));
