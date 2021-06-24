@@ -1,5 +1,5 @@
 'use strict';
-const CACHE_STATIC = 'static-cache-v26/7.2';
+const CACHE_STATIC = 'static-cache-v26/7.3';
 
 function hndlEventInstall(evt) {
     /**
