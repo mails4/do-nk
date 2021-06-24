@@ -1,5 +1,5 @@
 'use strict';
-const CACHE_STATIC = 'static-cache-v26/7.12';
+const CACHE_STATIC = 'static-cache-v26/7.14';
 
 
 
@@ -46,7 +46,7 @@ function hndlEventInstall(evt) {
         const files = [
             '/',
             '/index.html',
-            '/Re/'
+            '/Re/',
            /** 
             '/do-nk/',
             '/do-nk/sw.js',
