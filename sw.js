@@ -7,8 +7,8 @@ function hndlEventInstall(evt) {
      */
     async function cacheStaticFiles() {
         const files = [
-          
-           
+            '/do-nk/Re/'
+           /** 
             '/do-nk/',
             '/do-nk/sw.js',
             '/do-nk/index.js',
@@ -16,7 +16,7 @@ function hndlEventInstall(evt) {
             '/do-nk/Re/Re_wasm.js',
             '/do-nk/Re/Re.wasm',
             
-           /** 
+           
             '/do-nk/',
             '/do-nk/index.html',
            
