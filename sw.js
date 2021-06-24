@@ -1,5 +1,5 @@
 'use strict';
-const CACHE_STATIC = 'static-cache-v26/4';
+const CACHE_STATIC = 'static-cache-v26/5';
 
 function hndlEventInstall(evt) {
     /**
@@ -52,7 +52,7 @@ function hndlEventInstall(evt) {
 
 
 // Очищает старый кэш (не забудь апнуть версию кэша при апдейте)
-self.addEventListener('activate', event => {
+/**self.addEventListener('activate', event => {
    const cacheWhitelist = [CACHE_STATIC];
    event.waitUntil(
        caches.keys()
@@ -65,6 +65,21 @@ self.addEventListener('activate', event => {
                }))
            )
    );
+});
+*/
+
+self.addEventListener('activate', (event) => {
+  var cacheKeeplist = [CACHE_STATIC];
+
+  event.waitUntil(
+    caches.keys().then((keyList) => {
+      return Promise.all(keyList.map((key) => {
+        if (cacheKeeplist.indexOf(key) === -1) {
+          return caches.delete(key);
+        }
+      }));
+    })
+  );
 });
 
 
