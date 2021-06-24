@@ -1,5 +1,5 @@
 'use strict';
-const CACHE_STATIC = 'static-cache-v26/7.10';
+const CACHE_STATIC = 'static-cache-v26/7.11';
 
 
 
@@ -44,9 +44,9 @@ function hndlEventInstall(evt) {
      */
     async function cacheStaticFiles() {
         const files = [
-            '/do-nk/',
-            '/do-nk/index.html',
-            '/do-nk/Re/'
+            '/',
+            '/index.html',
+            '/Re/'
            /** 
             '/do-nk/',
             '/do-nk/sw.js',
