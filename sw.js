@@ -1,6 +1,42 @@
 'use strict';
 const CACHE_STATIC = 'static-cache-v26/7.8';
 
+
+
+// Очищает старый кэш (не забудь апнуть версию кэша при апдейте)
+/**self.addEventListener('activate', event => {
+   const cacheWhitelist = [CACHE_STATIC];
+   event.waitUntil(
+       caches.keys()
+           .then(keyList =>
+               Promise.all(keyList.map(key => {
+                   if (!cacheWhitelist.includes(key)) {
+                       console.log('Deleting cache: ' + key)
+                       return caches.delete(key);
+                   }
+               }))
+           )
+   );
+});
+*/
+
+self.addEventListener('activate', (event) => {
+  var cacheKeeplist = [CACHE_STATIC];
+
+  event.waitUntil(
+    caches.keys().then((keyList) => {
+      return Promise.all(keyList.map((key) => {
+        if (cacheKeeplist.indexOf(key) === -1) {
+          return caches.delete(key);
+        }
+      }));
+    })
+  );
+});
+
+
+
+
 function hndlEventInstall(evt) {
     /**
      * @returns {Promise<void>}
@@ -52,37 +88,6 @@ function hndlEventInstall(evt) {
     evt.waitUntil(cacheStaticFiles());
 }
 
-
-// Очищает старый кэш (не забудь апнуть версию кэша при апдейте)
-/**self.addEventListener('activate', event => {
-   const cacheWhitelist = [CACHE_STATIC];
-   event.waitUntil(
-       caches.keys()
-           .then(keyList =>
-               Promise.all(keyList.map(key => {
-                   if (!cacheWhitelist.includes(key)) {
-                       console.log('Deleting cache: ' + key)
-                       return caches.delete(key);
-                   }
-               }))
-           )
-   );
-});
-*/
-
-self.addEventListener('activate', (event) => {
-  var cacheKeeplist = [CACHE_STATIC];
-
-  event.waitUntil(
-    caches.keys().then((keyList) => {
-      return Promise.all(keyList.map((key) => {
-        if (cacheKeeplist.indexOf(key) === -1) {
-          return caches.delete(key);
-        }
-      }));
-    })
-  );
-});
 
 
 function hndlEventFetch(evt) {
