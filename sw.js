@@ -1,5 +1,5 @@
 'use strict';
-const CACHE_STATIC = 'static-cache-v27/0.03';
+const CACHE_STATIC = 'static-cache-v27/0.04';
 
 
 
