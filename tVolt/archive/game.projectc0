@@ -91,6 +91,7 @@ subpixels = 1
 
 [model]
 max_count = 128
+split_meshes = 0
 
 [mesh]
 max_count = 128
@@ -164,7 +165,7 @@ archive_location_prefix = archive
 archive_location_suffix = 
 engine_arguments = 
 wasm_streaming = 0
-show_fullscreen_button = 1
+show_fullscreen_button = 0
 show_made_with_defold = 0
 show_console_banner = 0
 scale_mode = stretch
